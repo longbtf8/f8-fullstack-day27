@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./url-manipulator.css" />
+    <title>url-manipulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>URL Manipulation Tool</h1>
+
+      <div class="form-container">
+        <form action="">
+          <div class="current-url">
+            <h2>Url Hiện Tại:</h2>
+            <div id="currentUrl"></div>
+          </div>
+          <div class="form-group">
+            <label for="protocol">Protocol :</label>
+            <select name="protocol" id="protocol">
+              <option value="https:">https://</option>
+              <option value="http:">http://</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="port">Port (tuỳ chọn ):</label>
+            <input
+              type="number"
+              id="port"
+              name="port"
+              placeholder="3000"
+              min="1"
+            />
+          </div>
+          <div class="form-group">
+            <label for="hostname">Hostname:</label>
+            <input
+              type="text"
+              id="hostname"
+              name="hostname"
+              placeholder="google.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="pathname">Pathname:</label>
+            <input
+              type="text"
+              id="pathname"
+              name="pathname"
+              placeholder="/products/detail"
+            />
+          </div>
+          <div class="form-group">
+            <label for="search">Search/Query:</label>
+            <input
+              type="text"
+              id="search"
+              name="search"
+              placeholder="?id=123&name=abc"
+            />
+          </div>
+          <div class="form-group">
+            <label for="hash"> Hash:</label>
+            <input type="text" id="hash" name="hash" placeholder="#section1" />
+          </div>
+          <div class="url-preview">
+            <h3>URL Preview:</h3>
+            <div class="url-display">URL Display</div>
+          </div>
+          <div class="button-container">
+            <button type="button" class="btn btn-navigate">Navigate</button>
+            <button type="button" class="btn btn-replace">Replace</button>
+            <button type="button" class="btn btn-reload">Reload</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./url-manipulator.js"></script>
+  </body>
+</html>
