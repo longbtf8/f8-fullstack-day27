@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./clipboard-manager.css" />
+    <title>bai3.1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section_1">
+        <textarea
+          name="ContentCopy"
+          id="textCopy"
+          placeholder="Nhập nội dung copy"
+          rows="5"
+          cols="40"
+        ></textarea>
+        <button id="btnCopy">Copy</button>
+      </div>
+      <div class="section_2">
+        <textarea
+          name="textPaste"
+          id="Paste"
+          placeholder="Nội dung paste sẽ hiển thị ở đây"
+          rows="5"
+          cols="40"
+        ></textarea>
+        <button id="idPaste">Paste</button>
+      </div>
+    </div>
+    <script src="./clipboard-manager.js"></script>
+  </body>
+</html>

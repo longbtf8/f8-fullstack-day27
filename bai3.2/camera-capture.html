@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./camera-capture.css" />
+    <title>bai3.2</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Camera App</h1>
+      <div class="section">
+        <div class="section-title">
+          <span>Video Stream</span>
+        </div>
+        <!-- camera -->
+        <div class="camera">
+          <video id="video" autoplay></video>
+        </div>
+        <!-- button -->
+        <div>
+          <button class="start-btn">Start Camera</button>
+          <button class="stop-btn">Stop Cameras</button>
+          <button class="capture-btn">Take Photo</button>
+        </div>
+
+        <div class="status-camera">Camera: Tắt</div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Photo Capture</div>
+
+        <div class="photo-container">
+          <img id="photoPreview" class="photoPreview" alt="'PhotoPreview" />
+        </div>
+
+        <div>
+          <button class="download-btn">DowLoad Img</button>
+        </div>
+      </div>
+    </div>
+    <script src="./camera-capture.js"></script>
+  </body>
+</html>
